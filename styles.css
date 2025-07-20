@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: rgb(55, 55, 169);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo{
+    color: rgb(86, 49, 49);
+    font-size: 3em;
+
+}
+
+.titulo:hover{
+    color: rgb(47, 98, 100);
+}
+
+
+
+#parrafo1{
+    color:red;  
+    font-size: 3em;
+}
+
+
+.parrafos{
+    color: aqua;
+    font-size: 2em;
+}
+
+
+.contenedor{
+    border: solid 2px black;
+    width: 200px;
+    text-align: center;
+    
+}
