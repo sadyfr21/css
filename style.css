@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    line-height: 1.6;
+}
+
+
+
+:root {
+    --color-primary: #2a3f38;
+    --color-secondary: #a2a2a2;
+    --color-accent: #d4dde2;
+    --color-text: #8a2b4a;
+    
+}
+
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;  
+    padding: 0;
+    color: solid var(--color-primary);
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.img {
+display: flex;
+position: relative;
+width: 150px;
+height: auto;
+left: 700px;
+
+
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2xp var(--color-primary);
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+header h1{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+}
+
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: var(--color-text);
+    position: relative;
+}
+
+nav a::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    background-color: var(--color-accent);
+    bottom: -2px;
+    transition: width 0.3 ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+section[relo="dialogo"] {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    max-width: 300px;
+    border-radius: 16px;
+    box-shadow: inset;
+}
+
+h5 {
+    font-size: 1.8rem;
+    color: var(--color-text);
+    padding-left: 4px solid var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+h6 {
+    font-size: 1.2rem;
+    color: var(--color-text);
+}
+
+span {
+    display: block;
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+ul,
+ol {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+li {
+    margin-bottom: 0.3rem;
+}
+
+a[dowload] {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: white;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 16px;
+}
+
+#proyectos>div {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    background-color: #8a2b4a;
+    padding: 1rem;
+    border-radius: 16px;
+}
+
+details {
+    margin: 1rem;
+    border-left: 4px solid var(--color-text);
+    border-radius: 4px;
+    padding: 1rem;
+}
+.ph5 {
+    margin: 3rem 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--color-primary);
+    border-top: 2px solid var(--color-accent);
+    border-radius: 1.5rem;
+}
